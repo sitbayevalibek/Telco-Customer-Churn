@@ -47,7 +47,7 @@ def main():
 
     with st.container():
         st.success(churn)
-        st.markdown('<h1 style="font-size:large;">Reminder!!!. Model accuracy did not exceed 80%. Taking this into account, the model may show an error result.</h1>', unsafe_allow_html=True)
+        st.markdown('<h2 style="font-size:large;">Reminder!!!. Model accuracy did not exceed 80%. Taking this into account, the model may show an error result.</h2>', unsafe_allow_html=True)
         st.markdown('<h1 style="font-size:large;">My Social Links</h1>', unsafe_allow_html=True)
         st.markdown('[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sitbayevalibek)')
         st.markdown('[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?&style=flat-square&logo=github&logoColor=white)](https://github.com/sitbayevalibek)')
