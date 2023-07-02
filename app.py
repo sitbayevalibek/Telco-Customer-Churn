@@ -8,7 +8,7 @@ loaded_model = pickle.load(open('gb_class.sav', 'rb'))
 
 
 # creating a function for Prediction
-def diabetes_prediction(input_data):
+def prediction(input_data):
     # changing the input_data to numpy array
     input_data_as_numpy_array = np.asarray(input_data)
     # reshape the array as we are predicting for one instance
@@ -43,7 +43,7 @@ def main():
 
     # creating a button for Prediction
     if st.button('Submit'):
-        churn = diabetes_prediction([SeniorCitizen, Partner, Dependents, tenure, StreamingTV, StreamingMovies, Contract,	PaperlessBilling,	PaymentMethod, MonthlyCharges, TotalCharges])
+        churn = prediction([SeniorCitizen, Partner, Dependents, tenure, StreamingTV, StreamingMovies, Contract,	PaperlessBilling,	PaymentMethod, MonthlyCharges, TotalCharges])
 
     with st.container():
         st.success(churn)
